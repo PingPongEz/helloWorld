@@ -14,21 +14,22 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         helloWorldLabel.isHidden = true
         helloWorldLabel.textColor = .orange
-        showTextButton.layer.cornerRadius = 13
-        
+        showTextButton.layer.cornerRadius = 15
+    
     }
 
     @IBAction func showTextButtonPressed() {
+        
         helloWorldLabel.isHidden.toggle()
         
-        if helloWorldLabel.isHidden {
-            showTextButton.setTitle("Show text", for: .normal)
-        } else  {
-            showTextButton.setTitle("Hide Text", for: .normal)
-        }
+        helloWorldLabel.isHidden ?
+        showTextButton.setTitle("Show Text", for: .normal) :
+        showTextButton.setTitle("Hide Text", for: .normal)
+        
     }
     
     
