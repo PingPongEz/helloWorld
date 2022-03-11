@@ -11,6 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="helloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -21,6 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ6-3s-sdn">
                                 <rect key="frame" x="133.5" y="674" width="147" height="71"/>
@@ -36,7 +38,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E29-y7-5D3"/>
+                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="fey-Pg-Ycr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,11 +52,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonShowText" destination="uZ6-3s-sdn" id="h09-qb-vEj"/>
                         <outlet property="helloWorldLabel" destination="xkf-Od-C46" id="PLa-IE-fW5"/>
+                        <outlet property="showTextButton" destination="uZ6-3s-sdn" id="cL2-Wq-m1Q"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="79.710144927536234" y="123.88392857142857"/>
         </scene>
